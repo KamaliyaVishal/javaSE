@@ -60,8 +60,7 @@ public class _02_UnaryBinaryOperator
 		// Chaining UnaryOperators
 		UnaryOperator<Integer> multiplyBy2 = x -> x * 2;
 		UnaryOperator<Integer> add10 = x -> x + 10;
-		UnaryOperator<Integer> chain = multiplyBy2.andThen(add10);
-		System.out.println("  Chain (5): multiply by 2, then add 10 = " + chain.apply(5));
+		System.out.println("  Chain (5): multiply by 2, then add 10 = " + multiplyBy2.andThen(add10).apply(5));
 		System.out.println();
 	}
 
