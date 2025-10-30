@@ -432,7 +432,7 @@ boolean allEven = numbers.stream().allMatch(n -> n % 2 == 0);  // false
 boolean noneNegative = numbers.stream().noneMatch(n -> n < 0); // true
 ```
 
-#### 4.13 Worst Case Scenario Examples
+#### 4.13 Examples
 ```java
 // Longest string
 List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David");
